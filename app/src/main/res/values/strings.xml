@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Miscelanea</string>
+    <string name="lbOperando1">Operando 1:</string>
+    <string name="lbOperando2">Operando 2:</string>
+    <string name="txtOperando1">12</string>
+    <string name="txtOperando2">4</string>
+    <string name="lbResultado">0</string>
+    <string name="lbResultadoError">¡No se puede dividir por 0!</string>
+    <string name="btnPotencia">Potencia</string>
+    <string name="btnFactorial">Factorial</string>
+    <string name="btnFibonacci">Fibonacci</string>
 </resources>

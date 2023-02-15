@@ -7,12 +7,114 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lbOperando1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/lbOperando1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/lbOperando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbOperando2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbOperando1"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/txtOperando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtOperando1"
+        android:inputType="number|numberSigned"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/lbOperando1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <EditText
+        android:id="@+id/txtOperando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtOperando2"
+        android:inputType="number|numberSigned"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/lbOperando2"
+        app:layout_constraintTop_toBottomOf="@+id/txtOperando1"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/btnPotencia"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:onClick="sumar"
+        android:text="@string/btnPotencia"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/btnFactorial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbOperando2" />
+
+    <Button
+        android:id="@+id/btnFactorial"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:onClick="restar"
+        android:text="@string/btnFactorial"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/btnFibonacci"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPotencia"
+        app:layout_constraintTop_toBottomOf="@+id/lbOperando2" />
+
+    <Button
+        android:id="@+id/btnFibonacci"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:onClick="multiplicar"
+        android:text="@string/btnFibonacci"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFactorial"
+        app:layout_constraintTop_toBottomOf="@+id/lbOperando2" />
+
+    <TextView
+        android:id="@+id/lbResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="@string/lbResultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFactorial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
