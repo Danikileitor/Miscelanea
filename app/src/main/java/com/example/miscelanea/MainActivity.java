@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         }else{operando1 = 0;}
         String fibonacci = "";
         int num1 = 0, num2 = 1, suma = 1;
-        for (int i = 1; i < operando1; i++) {
+        for (int i = 1; i <= operando1; i++) {
             fibonacci += suma + "/";
             suma = num1 + num2;
             num1 = num2;

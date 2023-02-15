@@ -6,7 +6,6 @@
     <string name="txtOperando1">12</string>
     <string name="txtOperando2">4</string>
     <string name="lbResultado">0</string>
-    <string name="lbResultadoError">¡No se puede dividir por 0!</string>
     <string name="btnPotencia">Potencia</string>
     <string name="btnFactorial">Factorial</string>
     <string name="btnFibonacci">Fibonacci</string>
