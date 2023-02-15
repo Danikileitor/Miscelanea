@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public void potencia(View view) {
         if (!String.valueOf(txtOperando1.getText()).matches("")){
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
-        }else{operando1 = 0;}
+        }else{operando1 = 1;}
         if (!String.valueOf(txtOperando2.getText()).matches("")){
             operando2 = Integer.parseInt(String.valueOf(txtOperando2.getText()));
         }else{operando2 = 0;}
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void factorial(View view) {
         if (!String.valueOf(txtOperando1.getText()).matches("")){
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
-        }else{operando1 = 0;}
+        }else{operando1 = 1;}
         resultado = 1;
         for (int i=operando1;i>0;i--)
         {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     public void fibonacci(View view) {
         if (!String.valueOf(txtOperando1.getText()).matches("")){
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
-        }else{operando1 = 0;}
+        }else{operando1 = 1;}
         String fibonacci = "";
         int num1 = 0, num2 = 1, suma = 1;
         for (int i = 1; i <= operando1; i++) {

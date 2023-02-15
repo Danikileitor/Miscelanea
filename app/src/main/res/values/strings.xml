@@ -3,7 +3,7 @@
     <string name="app_name">Miscelanea</string>
     <string name="lbOperando1">Operando 1:</string>
     <string name="lbOperando2">Operando 2:</string>
-    <string name="txtOperando1">0</string>
+    <string name="txtOperando1">1</string>
     <string name="txtOperando2">0</string>
     <string name="lbResultado">0</string>
     <string name="btnPotencia">Potencia</string>
