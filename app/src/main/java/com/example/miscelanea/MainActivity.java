@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         lbResultado.setText(String.valueOf(resultado));
     }
 
+    @SuppressWarnings("StringConcatenationInLoop")
     public void fibonacci(View view) {
         if (!String.valueOf(txtOperando1.getText()).matches("")){
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
