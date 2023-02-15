@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
         }else{operando1 = 1;}
         resultado = 1;
-        for (int i=operando1;i>0;i--)
-        {
-            resultado=resultado*i;
-        }
+        for (int i=operando1;i>0;i--)resultado=resultado*i;
         lbResultado.setText(String.valueOf(resultado));
     }
 
@@ -52,14 +49,16 @@ public class MainActivity extends AppCompatActivity {
             operando1 = Integer.parseInt(String.valueOf(txtOperando1.getText()));
         }else{operando1 = 1;}
         String fibonacci = "";
-        int num1 = 0, num2 = 1, suma = 1;
-        for (int i = 1; i <= operando1; i++) {
-            fibonacci += suma + "/";
-            suma = num1 + num2;
-            num1 = num2;
-            num2 = suma;
-        }
+        if (operando1>=1) {
+            int num1 = 0, num2 = 1, suma = 1;
+            for (int i = 1; i <= operando1; i++) {
+                fibonacci += suma + "/";
+                suma = num1 + num2;
+                num1 = num2;
+                num2 = suma;
+            }
         fibonacci = fibonacci.substring(0, fibonacci.length()-1);
+        }else{fibonacci = "0";}
         lbResultado.setText(fibonacci);
     }
 }
